@@ -46,6 +46,8 @@
   },
   "homepage": "https://github.com/pithagon/pithagon.js#readme",
   "devDependencies": {
+    "@ryansonshine/commitizen": "^4.2.8",
+    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^29.5.10",
     "@types/node": "^20.10.1",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
@@ -63,6 +65,11 @@
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
+    }
   },
   "lint-staged": {
     "*.ts": "eslint --cache --cache-location .eslintcache --fix"
